@@ -7,6 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 import { RegisterComponent } from './login/register.component';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
@@ -24,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     BrowserModule,
     PagesModule,
+    ServiceModule,
     AppRoutingModule
   ],
   providers: [],

@@ -13,6 +13,7 @@ import { ChartsModule } from 'ng2-charts';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        PagesComponent
+        PagesComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
