@@ -14,7 +14,7 @@ import { ServiceModule } from './services/service.module';
 import { PagesModule } from './pages/pages.module';
 
 // Temporal
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     BrowserModule,
     PagesModule,
+    ReactiveFormsModule,
     ServiceModule,
     AppRoutingModule
   ],
