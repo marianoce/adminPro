@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Usuarios</h4>
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr *ngFor="let usuario of usuarios" [routerLink]="['/usuarios', usuario._id]">
+                            <td><img [src]="usuario.img | imagen" class="rounded img-fluid"></td>
+                            <td>{{usuario.nombre}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Medicos</h4>
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr *ngFor="let medico of medicos" [routerLink]="['/medico', medico._id]">
+                            <td><img [src]="medico.img | imagen:'medicos'" class="rounded img-fluid"></td>
+                            <td>{{medico.nombre}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hospitales</h4>
+
+                <table class="table table-hover">
+                    <tbody>
+                        <tr *ngFor="let hospital of hospitales" [routerLink]="['/hospitales', hospital._id]">
+                            <td><img [src]="hospital.img | imagen:'hospitales'" class="rounded img-fluid"></td>
+                            <td>{{hospital.nombre}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
